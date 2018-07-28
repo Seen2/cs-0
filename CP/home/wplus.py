@@ -1,0 +1,7 @@
+f=open('new2.txt','w+')
+print(f)
+print('enter the text to write')
+text=input('texr;')
+f.write(text)
+f.seek(0)
+print(f.read())
