@@ -10,12 +10,17 @@ def intreverse(n):
 def matched(s):
     n=len(s)-1
     r=0
+    y=0
     while(n>=0):
 
-        if '('==s[n]:
-            r=r+1
         if ')'==s[n]:
+            r=r+1
+            y=n
+            print('case1:s[n]='+str(s[n])+str(n))
+
+        if '('==s[n] and y>n:
             r=r-1
+            print('case2:'+str(n)+','+str(y))
 
         n=n-1
     return (r==0)

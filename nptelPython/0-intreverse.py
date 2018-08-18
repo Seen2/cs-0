@@ -10,13 +10,14 @@ def intreverse(n):
 def matched(s):
     n=len(s)-1
     r=0
+    y=0
     while(n>=0):
 
-        if '('==s[n]:
-            r=r+1
         if ')'==s[n]:
+            r=r+1
+            y=n
+        if '('==s[n] and y>n:
             r=r-1
-
         n=n-1
     return (r==0)
 
