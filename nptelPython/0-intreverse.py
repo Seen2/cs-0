@@ -14,10 +14,12 @@ def matched(s):
     while(n>=0):
 
         if ')'==s[n]:
-            r=r+1
             y=n
         if '('==s[n] and y>n:
-            r=r-1
+            print(s)
+            s.replace(s[y],'')
+            s.replace(s[n],'')
+            print(s)
         n=n-1
     return (r==0)
 
