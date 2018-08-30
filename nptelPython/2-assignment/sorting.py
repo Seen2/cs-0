@@ -20,43 +20,16 @@ def valley(l):
 
 def transpose(m):
     r=len(m)
-    c=len(m[0]) 
-    t=[[0]*(r-1)]*(c-1)
+    c=len(m[0])
+    t=[[0 for x in range(r)] for y in range(c)]
     print('r={},c={}'.format(r,c))
     for i in range(r):
         for j in range(c):
-            print(i,j)
-            t[j].append(m[i][j])
+            t[j][i]=m[i][j]
+            print(t)
+        print(t)
     return t
 
 
 print(transpose([[1,4,9]]))
 
-
-
-
-'''
-def descending(l):
-    s=len(l)
-    if s==0 :
-        return l
-
-    for i in range(s):
-        if(i<s-1):
-            t=l[i]
-            l[i]=large(l[i+1:])
-            l[i+1]=t
-    return l
-
-
-print(descending([4,4,3]))
-       
-
-def large(l):
-    large=l[0]
-    for i in range(len(l)):
-        if large<l[i]:
-            large=l[i]
-
-    return large
-'''
