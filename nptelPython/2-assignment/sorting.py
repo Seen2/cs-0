@@ -1,11 +1,21 @@
-def large(l):
-    large=l[0]
-    for i in range(len(l)):
-        if large<l[i]:
-            large=l[i]
+def descending(l):
+    for i in range(len(l)-1):
+        if l[i]<l[i+1]:
+            return False
+    return True
 
-    return large
+def valley(l):
+    for i in range(len(l)-1):
+        if l[i]<l[i+1]:
+            flag+=1
 
+
+
+
+
+
+
+'''
 def descending(l):
     s=len(l)
     if s==0 :
@@ -22,4 +32,11 @@ def descending(l):
 print(descending([4,4,3]))
        
 
+def large(l):
+    large=l[0]
+    for i in range(len(l)):
+        if large<l[i]:
+            large=l[i]
 
+    return large
+'''
