@@ -1,6 +1,0 @@
-print("enter your name")
-s=input()
-print("hello,{}".format(s))
-print("name: ")
-s=input()
-print("hello, {}".format(s))
