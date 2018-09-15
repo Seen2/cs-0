@@ -25,7 +25,7 @@ int main()
  
    printf("The contents of %s file are:\n", file_name);
  
-   //take each charector of file and print it continiously unti 
+   //take each charector of file and print it continiously until 
    //EOF(for all file there is a charector that indicates file ends here) is found
    while((ch = fgetc(fp)) != EOF)
       printf("%c", ch); //print each charector
