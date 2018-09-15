@@ -25,7 +25,7 @@ def valley(l):
 def transpose(m):
     r=len(m)
     c=len(m[0])
-    t=[[0 for x in range(r)] for y in range(c)]
+        t=[[0 for x in range(r)] for y in range(c)] #initializing mrix
 
     for i in range(r):
         for j in range(c):
