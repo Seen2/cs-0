@@ -7,7 +7,9 @@ int main()
    FILE *fp;
  
    printf("Enter name of a file you wish to see\n");
-   gets(file_name);
+   //fgets(file_name,25,stdin);
+   //scanf("%s",&file_name);
+   scanf("%[^\n]%*c", file_name);
  
    fp = fopen(file_name, "r"); // read mode
  
