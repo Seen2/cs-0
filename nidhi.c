@@ -8,6 +8,7 @@ int main()
  
    printf("Enter name of a file you wish to see\n");
    fgets(file_name,10,stdin);
+   printf("The contents of %s file are:\n", file_name);
  
    fp = fopen(file_name, "r"); // read mode
  
@@ -18,10 +19,14 @@ int main()
    }
  
    printf("The contents of %s file are:\n", file_name);
-   ch = fgetc(fp)
-   while((ch = fgetc(fp)) != EOF)
+   ch = fgetc(fp);
+   while(ch  != EOF)
+   {
+
       printf("%c", ch);
- 
+      ch = fgetc(fp);
+   }
+
    fclose(fp);
    return 0;
 }
