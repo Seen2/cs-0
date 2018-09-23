@@ -63,3 +63,11 @@ class Node:
             selflist.append(temp.value)
 
         return(str(selflist))
+
+    def length(self):
+        if self.value == None:
+            return(0)
+        elif self.next == None:
+            return(1)
+        else:
+            return(1+self.next.length())
