@@ -1,0 +1,20 @@
+Trying 2405:200:1630:a2::255e...
+Connected to www.mit.edu.
+Escape character is '^]'.
+HTTP/1.0 400 Bad Request
+Server: AkamaiGHost
+Mime-Version: 1.0
+Content-Type: text/html
+Content-Length: 216
+Expires: Sat, 02 Sep 2017 04:12:47 GMT
+Date: Sat, 02 Sep 2017 04:12:47 GMT
+Connection: close
+
+<HTML><HEAD>
+<TITLE>Bad Request</TITLE>
+</HEAD><BODY>
+<H1>Bad Request</H1>
+Your browser sent a request that this server could not understand.<P>
+Reference&#32;&#35;7&#46;8d762c31&#46;1504325567&#46;0
+</BODY>
+</HTML>

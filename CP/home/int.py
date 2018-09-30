@@ -1,0 +1,10 @@
+print(" enter number")
+i=int (input())
+print("enter second number")
+j=int (input())
+print("sum of {} and {} is{}".format(i,j,(i+j)))
+print("{} or {} gives {}".format(i,j,i//j))
+print("number:")
+i=input()
+print("hello {}".format(i))
+
