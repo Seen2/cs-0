@@ -1,0 +1,18 @@
+footprint=> lokk around and gather information from their activites regardless of target.
+dos=> (just you) deniel of service(child attacks). making request than a server can handle.
+ddos=> effect other device make them slave and attck with multiple devices.
+require necessary preparation.
+dat=> (RAT[Remote Administration Tools] + FUD[Fully Undetectible]) fud can't be detected by antiviruses. Rat are files.
+Root kit=> comes between os and task_manager to hide processes.
+
+fishing=> send link to known website and control them (like fishing ) now days they change server adress in dns and you dont understand which private dns is controling you.
+vpn
+sql injection=> by formulating sql qurries to the servers.
+Proxy=> anonymousing.
+Tor=> open and faster than proxy.
+vps=> virtual private server.  inside virtual machine.
+key loggers => use to extract credential.
+firewalls=> configured by terminal commands.
+reverse-shell=> program that infect other device and open reverse connection to you.
+
+

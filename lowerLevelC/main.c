@@ -1,25 +1,16 @@
 #include <stdio.h>
-
+#include <unistd.h>
 int main(void)
 {
-	int s=0b00000001;
-	printf("s=%i \n",s);
-	s =s & 0b00000000;
-	printf("after AND operation s=%i \n",s);
-	s |= 0b00000001;
-	printf("after OR operation s=%i \n",s);
-	s =!(s);
+	int x=0b00000001;
+	printf("please start entering..\n");
+	while(1)
+	{
 
-	printf("after NOT operation s=%i \n",s);
-
-	s= 1<< 0b00000011;
-
-	printf("after SHIFT operation s=%i \n",s);
-	s=0;
-	s ^=( 1<< s);
-	printf("after XOR operation s=%i \n",s);
-	s ^=s; 
-	printf("after itself XOR operation s=%i \n",s);
-	s ^=!s; 
-	printf("after itself XOR operation s=%i \n",s);
+		scanf("%i",&x);
+		if(x==-99) break;
+		x=!x; 
+		sleep(1);
+		printf("after itself ~ operation x=%i \n",x);
+	}
 }
